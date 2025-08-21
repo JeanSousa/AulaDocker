@@ -2,16 +2,6 @@
 
 Este repositório contém exemplos de como criar uma **imagem Docker** a partir de um `Dockerfile` e como rodar serviços utilizando **docker-compose**.
 
----
-
-## 📌 Estrutura dos diretórios
-.
-├── dockerfile-nginx-ubuntu-example/
-│ └── Dockerfile
-└── docker-compose-example/
-  └── docker-compose.yaml
-
----
 
 ## 🚀 Criando uma imagem com Dockerfile
 
@@ -23,11 +13,8 @@ O diretório `dockerfile-nginx-ubuntu-example/` contém um `Dockerfile` baseado 
    ```bash
    cd dockerfile-nginx-ubuntu-example
 
---- 
+    docker image build -t meu-nginx .
 
- docker image build -t meu-nginx .
-
----
 
 ## 🚀 Subindo os containers do docker-compose
 
@@ -38,8 +25,6 @@ O diretório `docker-compose-example/` contém um `docker-compose.yml`.
 1. Acesse o diretório onde está o `docker-compose.yml`:
    ```bash
    cd docker-compose-example
---- 
 
- docker compose up
+   docker compose up
 
----
